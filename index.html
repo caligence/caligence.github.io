@@ -3,96 +3,150 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caligence Ltd | Building the Future</title>
-    <meta name="description"
-        content="Caligence Ltd - Pioneering digital intelligence through innovative apps and web solutions.">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Caligence Limited | Careful software that works on your device</title>
+    <meta name="description" content="Caligence Limited is an independent software company incorporated in Hong Kong and the maker of WisprWave, private on-device dictation for Mac.">
+    <link rel="canonical" href="https://caligence.com/">
+    <meta property="og:title" content="Caligence Limited | Careful software that works on your device">
+    <meta property="og:description" content="Caligence Limited is an independent software company incorporated in Hong Kong and the maker of WisprWave, private on-device dictation for Mac.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caligence.com/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700;800&display=swap"
-        rel="stylesheet">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Caligence Limited","url":"https://caligence.com/","email":"contact@caligence.com","address":{"@type":"PostalAddress","addressCountry":"HK"}}</script>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">CALIGENCE</a>
-                <div class="nav-links">
-                    <a href="#about">About</a>
-                    <a href="#products">What We Build</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="./" aria-label="Caligence home"><svg class="seal" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="3" fill="#ad2f1c"/><path d="M22.5 11.2A8 8 0 1 0 22.5 20.8" fill="none" stroke="#f4f0e7" stroke-width="2.6" stroke-linecap="round"/></svg><span>Caligence</span></a>
+            <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h18M3 16h18"/></svg>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <a href="wisprwave/">WisprWave</a>
+                <a href="about/">About</a>
+                <a href="contact/">Contact</a>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content fade-in">
-            <h1>Innovating the Future of <br>Digital Experiences</h1>
-            <p>We build and publish next-generation mobile apps and web platforms that empower users worldwide.</p>
-            <a href="#products" class="btn btn-primary">Our Products</a>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title fade-in">Who We <span>Are</span></h2>
-            <div class="glass-card fade-in">
-                <p style="font-size: 1.1rem; text-align: center; max-width: 800px; margin: 0 auto;">
-                    Caligence Ltd is a technology company focused on creating in-house digital products. We allow our
-                    curiosity to drive innovation, building software that solves real-world problems with elegance and
-                    intelligence.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="products" class="services">
-        <div class="container">
-            <h2 class="section-title fade-in">What We <span>Build</span></h2>
-            <div class="services-grid">
-                <div class="glass-card service-item fade-in">
-                    <i class="fas fa-mobile-alt"
-                        style="font-size: 2rem; color: var(--accent-primary); margin-bottom: 20px;"></i>
-                    <h3>Mobile Applications</h3>
-                    <p>Intuitive and powerful iOS and Android apps designed to enhance productivity and lifestyle.</p>
-                </div>
-                <div class="glass-card service-item fade-in">
-                    <i class="fas fa-layer-group"
-                        style="font-size: 2rem; color: var(--accent-secondary); margin-bottom: 20px;"></i>
-                    <h3>SaaS Platforms</h3>
-                    <p>Robust web-based software solutions that deliver scalable value to users globally.</p>
-                </div>
-                <div class="glass-card service-item fade-in">
-                    <i class="fas fa-lightbulb" style="font-size: 2rem; color: #fff; margin-bottom: 20px;"></i>
-                    <h3>Innovation Labs</h3>
-                    <p>Experimental projects exploring the boundaries of AI, automation, and user experience.</p>
+    <main id="main">
+        <section class="hero">
+            <div class="wrap">
+                <p class="eyebrow">Caligence Limited. Independent software company, incorporated in Hong Kong.</p>
+                <h1>Careful software that does its work <em>on your device.</em></h1>
+                <p class="lead">We design, build and publish our own apps. Our first, WisprWave, turns your speech into text on your Mac, with no account, no subscription and no audio sent to a server.</p>
+                <div class="actions">
+                    <a class="btn btn-solid" href="wisprwave/">Explore WisprWave</a>
+                    <a class="btn btn-line" href="about/">About the company</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title fade-in">Get in <span>Touch</span></h2>
-            <div class="glass-card fade-in" style="max-width: 600px; margin: 0 auto; text-align: center;">
-                <p style="margin-bottom: 30px;">Have a question about our products or want to say hello?</p>
-                <a href="mailto:contact@caligence.com" class="btn btn-primary">developer@caligence.com</a>
+        <div class="ribbon" aria-hidden="true">
+            <div class="wrap">
+                <div class="bars"><i style="--n:0"></i><i style="--n:7"></i><i style="--n:14"></i><i style="--n:21"></i><i style="--n:5"></i><i style="--n:12"></i><i style="--n:19"></i><i style="--n:3"></i><i style="--n:10"></i><i style="--n:17"></i><i style="--n:1"></i><i style="--n:8"></i><i style="--n:15"></i><i style="--n:22"></i><i style="--n:6"></i><i style="--n:13"></i><i style="--n:20"></i><i style="--n:4"></i><i style="--n:11"></i><i style="--n:18"></i><i style="--n:2"></i><i style="--n:9"></i><i style="--n:16"></i><i style="--n:0"></i><i style="--n:7"></i><i style="--n:14"></i><i style="--n:21"></i><i style="--n:5"></i><i style="--n:12"></i><i style="--n:19"></i></div>
+                <span class="typed">Send the final draft by Friday.</span>
             </div>
         </div>
-    </section>
 
-    <footer>
-        <div class="container footer-content">
-            <p>&copy; 2026 Caligence Ltd. All rights reserved.</p>
+        <section class="section">
+            <div class="wrap feature">
+                <div>
+                    <p class="eyebrow">Our product</p>
+                    <h2>WisprWave</h2>
+                    <p class="lead" style="margin-top:20px">Dictation for the Mac that types into whichever app you are using. Speech recognition runs locally, using Whisper and Parakeet models on your own machine.</p>
+                    <dl class="facts">
+                        <div><dt>Platforms</dt><dd>macOS 14 or later, plus Linux</dd></div>
+                        <div><dt>Price</dt><dd>Free and open source</dd></div>
+                        <div><dt>Latest release</dt><dd>v1.4.0, October 2026</dd></div>
+                    </dl>
+                    <div class="actions">
+                        <a class="btn btn-solid" href="wisprwave/">See how it works</a>
+                        <a class="btn btn-line" href="https://github.com/panks/wispr-wave/releases/latest">Download</a>
+                    </div>
+                </div>
+                <figure class="shot">
+                    <img src="wisprwave/assets/menu-ss.png" width="1038" height="1038" loading="lazy" alt="The WisprWave menu bar panel, with an on and off switch, Whisper and Parakeet engine tabs, a model list, hotkey setting and mode options.">
+                    <figcaption>WisprWave in the Mac menu bar</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>How we build</h2>
+                </div>
+                <div class="columns">
+                    <div>
+                        <span class="num">01</span>
+                        <h3>Do the work locally</h3>
+                        <p>If a task can run on your device, it should. Your data stays with you, and the software keeps working when you are offline.</p>
+                    </div>
+                    <div>
+                        <span class="num">02</span>
+                        <h3>Ask for only what's needed</h3>
+                        <p>WisprWave has no sign-up and no tracking in its code. It asks for the two macOS permissions it needs to work, and we explain why.</p>
+                    </div>
+                    <div>
+                        <span class="num">03</span>
+                        <h3>Show the work</h3>
+                        <p>WisprWave's code, release history and known limits are public, so you can check what we say about it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section band">
+            <div class="wrap feature">
+                <div>
+                    <h2>Talk to us</h2>
+                    <p class="lead" style="margin-top:20px">Questions about the company, or need help with WisprWave? Email reaches us directly.</p>
+                </div>
+                <div class="actions" style="margin-top:0">
+                    <a class="btn btn-solid" href="contact/">Contact Caligence</a>
+                    <a class="btn btn-line" href="about/">About the company</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a class="brand" href="./"><svg class="seal" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="3" fill="#ad2f1c"/><path d="M22.5 11.2A8 8 0 1 0 22.5 20.8" fill="none" stroke="#f4f0e7" stroke-width="2.6" stroke-linecap="round"/></svg><span>Caligence</span></a>
+                    <p>Caligence Limited is an independent software company incorporated in Hong Kong.</p>
+                </div>
+                <div>
+                    <h2>Product</h2>
+                    <ul>
+                        <li><a href="wisprwave/">WisprWave</a></li>
+                        <li><a href="https://github.com/panks/wispr-wave/releases/latest">Download</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="about/">About</a></li>
+                        <li><a href="contact/">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Legal</h2>
+                    <ul>
+                        <li><a href="privacy/">Privacy Policy</a></li>
+                        <li><a href="terms/">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-legal">&copy; 2026 Caligence Limited. All rights reserved. <a href="mailto:contact@caligence.com">contact@caligence.com</a> &middot; <a href="mailto:developer@caligence.com">developer@caligence.com</a></p>
         </div>
     </footer>
 

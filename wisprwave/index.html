@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WisprWave | Private, on-device dictation for Mac</title>
+    <meta name="description" content="WisprWave by Caligence Limited is a free, open-source Mac dictation app. Whisper and Parakeet models run locally and type into any app.">
+    <link rel="canonical" href="https://caligence.com/wisprwave/">
+    <meta property="og:title" content="WisprWave | Private, on-device dictation for Mac">
+    <meta property="og:description" content="WisprWave by Caligence Limited is a free, open-source Mac dictation app. Whisper and Parakeet models run locally and type into any app.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://caligence.com/wisprwave/">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"WisprWave","applicationCategory":"UtilitiesApplication","operatingSystem":"macOS 14 or later","softwareVersion":"1.4.0","url":"https://caligence.com/wisprwave/","downloadUrl":"https://github.com/panks/wispr-wave/releases/latest","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Caligence Limited","url":"https://caligence.com/"}}</script>
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="../" aria-label="Caligence home"><svg class="seal" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="3" fill="#ad2f1c"/><path d="M22.5 11.2A8 8 0 1 0 22.5 20.8" fill="none" stroke="#f4f0e7" stroke-width="2.6" stroke-linecap="round"/></svg><span>Caligence</span></a>
+            <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h18M3 16h18"/></svg>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <a href="../wisprwave/" aria-current="page">WisprWave</a>
+                <a href="../about/">About</a>
+                <a href="../contact/">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-head">
+            <div class="wrap">
+                <p class="eyebrow">WisprWave for Mac. By Caligence Limited.</p>
+                <h1>Speak into any app. Your voice stays <em>on your Mac.</em></h1>
+                <p class="lead">WisprWave is a free, open-source menu bar app that turns speech into text. It runs Whisper and Parakeet speech models locally, then types the result wherever your cursor is.</p>
+                <div class="actions">
+                    <a class="btn btn-solid" href="https://github.com/panks/wispr-wave/releases/latest">Download v1.4.0</a>
+                    <a class="btn btn-line" href="https://github.com/panks/wispr-wave">View source on GitHub</a>
+                </div>
+                <p class="muted small" style="margin-top:18px">Free. macOS 14 or later. Optimized for Apple Silicon.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <div class="gallery">
+                    <figure class="shot">
+                        <img src="assets/menu-ss.png" width="1038" height="1038" alt="The WisprWave menu bar panel, with an on and off switch, Whisper and Parakeet engine tabs, a model list, hotkey setting and mode options.">
+                        <figcaption>Choose an engine, model and hotkey from the menu bar</figcaption>
+                    </figure>
+                    <figure class="shot">
+                        <img src="assets/in-action-ss.png" width="1328" height="1300" loading="lazy" alt="A terminal window with WisprWave's small recording indicator, showing a live waveform, below it.">
+                        <figcaption>A small indicator shows when it is listening</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <div class="section-head"><h2>What it does</h2></div>
+                <div class="columns">
+                    <div><h3>Runs on your Mac</h3><p>Transcription happens locally through Apple's Core ML, using WhisperKit and FluidAudio. Once a model is downloaded, dictation works in airplane mode.</p></div>
+                    <div><h3>Types into any app</h3><p>Dictate into Notes, Slack, Obsidian, VS Code or a terminal. WisprWave pastes text into the active window, so apps need no special support.</p></div>
+                    <div><h3>Stays out of the way</h3><p>It lives in the menu bar. Press your hotkey to dictate, and optionally let it stop by itself after a set period of silence.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="engines">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Two speech engines</h2>
+                    <p>Switch between them at the top of the model list. Only one model is held in memory at a time.</p>
+                </div>
+                <div class="table-scroll">
+                    <table>
+                        <thead><tr><td></td><th scope="col">Whisper <span class="muted small">(default)</span></th><th scope="col">Parakeet v2</th><th scope="col">Parakeet v3</th></tr></thead>
+                        <tbody>
+                            <tr><th scope="row">From</th><td>OpenAI</td><td>NVIDIA</td><td>NVIDIA</td></tr>
+                            <tr><th scope="row">Languages</th><td>Dozens</td><td>English</td><td>25 European languages</td></tr>
+                            <tr><th scope="row">Models</th><td>Tiny to Large-v3</td><td>Parakeet TDT 0.6B v2</td><td>Parakeet TDT 0.6B v3</td></tr>
+                            <tr><th scope="row">Download</th><td>Varies by model</td><td>About 460&ndash;480 MB</td><td>About 460&ndash;480 MB</td></tr>
+                            <tr><th scope="row">Boost Mode</th><td>Yes</td><td>Not needed</td><td>Not needed</td></tr>
+                            <tr><th scope="row">Best for</th><td>Wide language coverage</td><td>The most accurate English</td><td>European languages</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="muted small" style="margin-top:18px">Parakeet transcribed 29 seconds of audio in about 0.13 seconds in our test on an M4 Max. Speed depends on your Mac and model.</p>
+            </div>
+        </section>
+
+        <section class="section" id="modes">
+            <div class="wrap">
+                <div class="section-head"><h2>Three recording modes</h2></div>
+                <div class="columns">
+                    <div><h3>Standard</h3><p>Records everything first, then transcribes it in one pass when you stop. Simple and reliable for short dictations.</p></div>
+                    <div><h3>Boost</h3><p>For Whisper on a native Mac. Transcribes in the background while you speak, so only the last second or two remains when you stop.</p></div>
+                    <div><h3>Legacy</h3><p>For virtual machines such as VMware, Parallels and UTM, or if you hit audio driver problems. Records to a temporary file, then transcribes.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="get-started">
+            <div class="wrap split">
+                <h2>Get started</h2>
+                <div>
+                    <ol class="steps">
+                        <li><strong>Download and install</strong><span>Download <a href="https://github.com/panks/wispr-wave/releases/latest">WisprWave.zip</a>, unzip it and drag WisprWave.app to Applications.</span></li>
+                        <li><strong>Open it for the first time</strong><span>Current releases aren't signed with an Apple Developer ID, so macOS may block the app. Go to System Settings &gt; Privacy &amp; Security and choose Open Anyway.</span></li>
+                        <li><strong>Grant two permissions</strong><span>Microphone, to hear you. Accessibility, to paste text into the active app.</span></li>
+                        <li><strong>Download a model</strong><span>Pick one from the menu bar panel. After this, dictating doesn't need an internet connection.</span></li>
+                        <li><strong>Press the hotkey and speak</strong><span>The default is <kbd>&#8984;</kbd> <kbd>&#8679;</kbd> <kbd>;</kbd> and you can change it in the menu bar panel.</span></li>
+                    </ol>
+                    <p class="muted" style="margin-top:28px">Prefer to build it yourself? You'll need Xcode 15 or later.</p>
+<pre><code>git clone https://github.com/panks/wispr-wave.git
+cd wispr-wave &amp;&amp; ./package_app.sh</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="privacy">
+            <div class="wrap split">
+                <h2>Where your data goes</h2>
+                <div>
+                    <dl class="facts">
+                        <div><dt>Your voice</dt><dd>Processed on your Mac. WisprWave doesn't send it to us or anyone else.</dd></div>
+                        <div><dt>Your text</dt><dd>Pasted into the active app. WisprWave keeps no transcript history. What happens next depends on that app.</dd></div>
+                        <div><dt>Model downloads</dt><dd>Fetched from Hugging Face, which can see your IP address, as with any download.</dd></div>
+                        <div><dt>Tracking</dt><dd>WisprWave's code has no analytics and no account system.</dd></div>
+                    </dl>
+                    <p style="margin-top:22px"><a href="../privacy/">Read the full Privacy Policy</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="linux">
+            <div class="wrap split">
+                <h2>Also on Linux</h2>
+                <div>
+                    <p>A Linux version provides the same dictation flow for GNOME on Wayland and for KDE/Kubuntu, as a background service with a tray icon. It uses Parakeet v2 through sherpa-onnx, and was tuned on low-power hardware.</p>
+                    <p><a href="https://github.com/panks/wispr-wave/blob/main/linux/README.md">Linux setup instructions</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="wrap split">
+                <h2>Questions</h2>
+                <div>
+                    <details><summary>Is it really free?</summary><p>Yes. There are no paid tiers, API keys or subscriptions, and the source code is public under the MIT License.</p></details>
+                    <details><summary>Does it work offline?</summary><p>Yes, once a model is downloaded. The first download needs an internet connection; dictation after that doesn't.</p></details>
+                    <details><summary>Which model should I start with?</summary><p>For English, try Parakeet v2. For Whisper, we recommend Large V3 632T. Smaller models download faster but are generally less accurate.</p></details>
+                    <details><summary>Why does macOS warn me when I first open it?</summary><p>Current releases aren't signed with an Apple Developer ID, so macOS can't verify them through its usual check. Developer ID signing and notarization are what we plan to move to. Until then, you can use Open Anyway, or build the app from source.</p></details>
+                    <details><summary>Why does it need Accessibility permission?</summary><p>WisprWave sends a paste keystroke to put text into the active app, and macOS requires this permission to allow it.</p></details>
+                    <details><summary>Does it touch my clipboard?</summary><p>Briefly. It saves your clipboard, places the text there, pastes it and restores your clipboard about half a second later. A clipboard manager, if you use one, may record the text during that moment.</p></details>
+                    <details><summary>How do I get help?</summary><p>Email <a href="mailto:developer@caligence.com">developer@caligence.com</a> or <a href="https://github.com/panks/wispr-wave/issues">open an issue on GitHub</a>.</p></details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="changelog">
+            <div class="wrap split">
+                <h2>Release history</h2>
+                <ul class="log">
+                    <li><div class="ver">v1.4.0 <small>Oct 2026</small></div><p>Adds NVIDIA Parakeet as a second speech engine, with a Whisper | Parakeet switch. Dictations with no speech now show "No speech detected".</p></li>
+                    <li><div class="ver">v1.3.1 <small>Oct 2026</small></div><p>Fixes random quitting on macOS 27. First Linux version, for GNOME on Wayland and KDE/Kubuntu.</p></li>
+                    <li><div class="ver">v1.3.0 <small>May 2026</small></div><p>More reliable model downloads with a real progress bar. Accessibility permission now survives updates. Faster Boost Mode for short dictations. Optional auto-stop on silence.</p></li>
+                    <li><div class="ver">v1.2.0 <small>May 2026</small></div><p>Keeps all model files in Application Support, so nothing lands in your Documents folder.</p></li>
+                    <li><div class="ver">v1.1 <small>Feb 2026</small></div><p>Improves Boost Mode and adds a busy indicator.</p></li>
+                    <li><div class="ver">v1.0 <small>Feb 2026</small></div><p>First public release.</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="credits">
+            <div class="wrap split">
+                <h2>Credits</h2>
+                <div>
+                    <ul class="prose" style="padding-left:1.15em;margin:0">
+                        <li>Whisper models by OpenAI, run with <a href="https://github.com/argmaxinc/WhisperKit">WhisperKit</a>.</li>
+                        <li>Parakeet TDT 0.6B v2 and v3 by NVIDIA, with Core ML conversions by FluidInference (<a href="https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v2-coreml">v2</a>, <a href="https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v3-coreml">v3</a>), licensed under CC-BY-4.0.</li>
+                        <li><a href="https://github.com/FluidInference/FluidAudio">FluidAudio</a> (Apache-2.0) runs the Parakeet models.</li>
+                    </ul>
+                    <p class="muted small" style="margin-top:18px">WisprWave isn't affiliated with or endorsed by OpenAI, NVIDIA or Apple. Their names and trademarks belong to their owners.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a class="brand" href="../"><svg class="seal" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="3" fill="#ad2f1c"/><path d="M22.5 11.2A8 8 0 1 0 22.5 20.8" fill="none" stroke="#f4f0e7" stroke-width="2.6" stroke-linecap="round"/></svg><span>Caligence</span></a>
+                    <p>Caligence Limited is an independent software company incorporated in Hong Kong.</p>
+                </div>
+                <div>
+                    <h2>Product</h2>
+                    <ul>
+                        <li><a href="../wisprwave/">WisprWave</a></li>
+                        <li><a href="https://github.com/panks/wispr-wave/releases/latest">Download</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="../about/">About</a></li>
+                        <li><a href="../contact/">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Legal</h2>
+                    <ul>
+                        <li><a href="../privacy/">Privacy Policy</a></li>
+                        <li><a href="../terms/">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-legal">&copy; 2026 Caligence Limited. All rights reserved. <a href="mailto:contact@caligence.com">contact@caligence.com</a> &middot; <a href="mailto:developer@caligence.com">developer@caligence.com</a></p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
