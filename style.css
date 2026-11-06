@@ -310,6 +310,10 @@ kbd {
     max-width: 15em;
 }
 
+.hero h1 em {
+    white-space: nowrap;
+}
+
 .hero .lead {
     margin: 30px 0 0;
 }
